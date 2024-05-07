@@ -1,0 +1,27 @@
+
+3. ¿El siguiente código tiene un problema?, si es así, ¿como se puede solucionar?
+
+Si efectivamente el código tiene un problema, ya que useEffect no está construido para recibir una función asíncrona directamente, ya que esta devuelve una promesa y useEffect no espera esto. Esto puede causar que la función save se ejecute en un componente que ya no está montado, debido a que las funciones asíncronas tardan en ejecutar su respuesta. Además, saveForm está declarado en true, lo cual inicialmente debería ser false, lo cual solucionaría definiendo primero la función asíncrona y luego ejecutarla.
+
+Esta es mi solución
+useEffect(() => {
+  const fetchData = async () => {
+    await save({
+      nombre: _nombre,
+      rut: _rut,
+    });
+  };
+
+  fetchData();
+}, [saveForm]);
+
+
+
+
+4. ¿Que realiza el siguiente código? (esto esta escrito en C#.NET dentro de un Webform
+
+En primera instancia, Page_Load se ejecuta al cargar la pagina luego el codigo dentro convierte a int32 la variable Request.QueryString["idOperacion"] para asegurar que sea numérico. Luego, verifica si es la página la que está cargando por primera vez. Si es así, verifica que el ID de operación sea 0 y, si es 0, redirige a MisRevisiones.aspx. De lo contrario, se ejecuta la función obtenerDetalleMisSolicitudes(idOperacion).
+
+
+
+
