@@ -16,7 +16,7 @@ Sigue estos pasos para instalar el proyecto en tu máquina local:
 
 Para clonar el repositorio, ejecuta el siguiente comando en tu terminal:
 
-git clone https://github.com/Neidrooo/PruebaTecnicaFarmEx.git
-cd PruebaTecnicaFarmEx
-npm install
-npm run dev
+- git clone https://github.com/Neidrooo/PruebaTecnicaFarmEx.git
+- cd PruebaTecnicaFarmEx
+- npm install
+- npm run dev
