@@ -1,10 +1,22 @@
-# PruebaTecnicaFarmEx
+# Prueba tecnica FarmEX
 
-# React + Vite
+Breve descripción del proyecto: Formulario Basica de registro de usuario.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Requisitos Previos
 
-Currently, two official plugins are available:
+Antes de comenzar, asegúrate de tener instalado lo siguiente:
+- Node.js 
+- npm 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instalación
+
+Sigue estos pasos para instalar el proyecto en tu máquina local:
+
+### Clonar el Repositorio
+
+Para clonar el repositorio, ejecuta el siguiente comando en tu terminal:
+
+git clone https://github.com/Neidrooo/PruebaTecnicaFarmEx.git
+cd PruebaTecnicaFarmEx
+npm install
+npm run dev
